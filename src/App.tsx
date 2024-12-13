@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Footer from "./components/Footer";
+import About from "./components/About";
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
@@ -219,116 +221,8 @@ function App() {
 
         <main id="content">
           <div className="w-full max-w-2xl mx-auto pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-x-3">
-              <div className="shrink-0">
-                <img
-                  className="shrink-0 size-16 rounded-full"
-                  src="https://images.unsplash.com/photo-1510706019500-d23a509eecd4?q=80&w=2667&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Avatar"
-                />
-              </div>
-
-              <div className="grow">
-                <h1 className="text-lg font-medium text-gray-800 dark:text-neutral-200">
-                  Eliana Garcia
-                </h1>
-                <p className="text-sm text-gray-600 dark:text-neutral-400">
-                  Graphic Designer, Web designer/developer
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <p className="text-sm text-gray-600 dark:text-neutral-400">
-                I am a seasoned graphic designer with over 14 years of
-                experience in creating visually appealing and user-centric
-                designs. My expertise spans across UI design, design systems,
-                and custom illustrations, helping clients bring their digital
-                visions to life.
-              </p>
-
-              <p className="mt-3 text-sm text-gray-600 dark:text-neutral-400">
-                Currently, I work remotely for Notion, where I design template
-                UIs, convert them into HTML and CSS, and provide comprehensive
-                support to our users. I am passionate about crafting elegant and
-                functional designs that enhance user experiences.
-              </p>
-
-              <ul className="mt-5 flex flex-col gap-y-3">
-                <li className="flex items-center gap-x-2.5">
-                  <svg
-                    className="shrink-0 size-3.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <a
-                    className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    elianagarcia997@about.me
-                  </a>
-                </li>
-
-                <li className="flex items-center gap-x-2.5">
-                  <svg
-                    className="shrink-0 size-3.5"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.1881 10.1624L22.7504 0H20.7214L13.2868 8.82385L7.34878 0H0.5L9.47944 13.3432L0.5 24H2.5291L10.3802 14.6817L16.6512 24H23.5L14.1881 10.1624ZM11.409 13.4608L3.26021 1.55962H6.37679L20.7224 22.5113H17.6058L11.409 13.4613V13.4608Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <a
-                    className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    @elianagarcia997
-                  </a>
-                </li>
-
-                <li className="flex items-center gap-x-2.5">
-                  <svg
-                    className="shrink-0 size-3.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94" />
-                    <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32" />
-                    <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72" />
-                  </svg>
-                  <a
-                    className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    @elianagarcia997
-                  </a>
-                </li>
-              </ul>
-            </div>
-
+            <About />
+            {/*projects*/}
             <div className="mt-10 sm:mt-14">
               <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
                 Projects
@@ -522,7 +416,7 @@ function App() {
                 </a>
               </div>
             </div>
-
+            {/*skills*/}
             <div className="my-10 sm:my-14">
               <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
                 Skills
@@ -847,7 +741,7 @@ function App() {
                 </dl>
               </div>
             </div>
-
+             {/*work experience*/}
             <div className="mt-10 sm:mt-14">
               <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
                 Work experience
@@ -1107,7 +1001,7 @@ function App() {
                 </div>
               </div>
             </div>
-
+             {/*education*/}
             <div className="mt-10 sm:mt-14">
               <h2 className="mb-3 font-medium text-gray-800 dark:text-neutral-200">
                 Education
@@ -1273,7 +1167,7 @@ function App() {
                 </div>
               </div>
             </div>
-
+             {/*Articles*/}
             <div className="my-10 sm:my-14">
               <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
                 Articles
@@ -1346,108 +1240,9 @@ function App() {
                 </li>
               </ul>
             </div>
-
-            <div className="my-10 sm:my-14">
-              <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-                Subscribe
-              </h2>
-
-              <form>
-                <div className="p-1.5 flex flex-col sm:flex-row items-center gap-2 border border-gray-200 rounded-lg dark:border-neutral-700">
-                  <div className="relative w-full">
-                    <label className="sr-only">Subscribe</label>
-                    <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3">
-                      <svg
-                        className="shrink-0 size-4 text-gray-400 dark:text-neutral-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                      </svg>
-                    </div>
-                    <input
-                      type="text"
-                      id="hero-input"
-                      name="hero-input"
-                      className="py-2 ps-9 pe-3 block w-full border-transparent rounded-lg text-sm focus:border-transparent focus:ring-transparent disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  <a
-                    className="w-full sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
-                    href="#"
-                  >
-                    Join
-                    <svg
-                      className="shrink-0 size-3.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </a>
-                </div>
-                <p className="mt-2 text-xs text-gray-500 dark:text-neutral-500">
-                  No spam, unsubscribe at any time.
-                </p>
-              </form>
-            </div>
           </div>
         </main>
-        <footer className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="py-6 border-t border-gray-200 dark:border-neutral-700">
-            <div className="flex flex-wrap justify-between items-center gap-2">
-              <div>
-                <p className="text-xs text-gray-600 dark:text-neutral-400">
-                  © 2024 Preline Labs.
-                </p>
-              </div>
-
-              <ul className="flex flex-wrap items-center">
-                <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-                  <a
-                    className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    X (Twitter)
-                  </a>
-                </li>
-                <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-                  <a
-                    className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    Dribbble
-                  </a>
-                </li>
-                <li className="inline-block pe-4 text-xs">
-                  <a
-                    className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-                    href="#"
-                  >
-                    Github
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
