@@ -5,17 +5,17 @@ export default function About() {
         <div className="shrink-0">
           <img
             className="shrink-0 size-16 rounded-full"
-            src="https://images.unsplash.com/photo-1510706019500-d23a509eecd4?q=80&w=2667&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/logo.jpg"
             alt="Avatar"
           />
         </div>
 
         <div className="grow">
           <h1 className="text-lg font-medium text-gray-800 dark:text-neutral-200">
-            Eliana Garcia
+            Sathwik Bodakuntla
           </h1>
           <p className="text-sm text-gray-600 dark:text-neutral-400">
-            Graphic Designer, Web designer/developer
+            Fullstack Web Developer
           </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function About() {
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
               href="#"
             >
-              elianagarcia997@about.me
+              sathwikbodakuntla041@gmail.com
             </a>
           </li>
 
@@ -76,9 +76,9 @@ export default function About() {
             </svg>
             <a
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-              href="#"
+              href="https://twitter.com/Sathwiktwt"
             >
-              @elianagarcia997
+              @Sathwiktwt
             </a>
           </li>
 

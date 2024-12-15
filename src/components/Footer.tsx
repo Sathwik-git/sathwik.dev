@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="text-xs text-gray-600 dark:text-neutral-400">
-                © 2024 Preline Labs.
+                
               </p>
             </div>
 
@@ -24,7 +24,7 @@ export default function Footer() {
                   className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
                   href="#"
                 >
-                  Dribbble
+                  Linkedin
                 </a>
               </li>
               <li className="inline-block pe-4 text-xs">

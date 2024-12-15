@@ -1,7 +1,7 @@
 export default function Articles() {
     return (
       <>
-        <div className="my-10 sm:my-14">
+        <div className="my-10 sm:my-14" id="Articles">
           <h2 className="mb-5 font-medium text-gray-800 dark:text-neutral-200">
             Articles
           </h2>
